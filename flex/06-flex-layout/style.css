@@ -31,12 +31,33 @@ input {
 body{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+
+button{
+  padding: 10px;
+}
+
+.content{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 a{
   text-decoration: none;
   color: gray;
+}
+
+.header, .footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.footer{
+  background-color: #eeeeee;
 }
 
 ul{
@@ -47,22 +68,3 @@ ul{
   gap: 10px;
 }
 
-.header, .footer{
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-.content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer{
-  background-color: #eeeeee;
-}
-
-button{
-  padding: 10px;
-}
