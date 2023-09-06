@@ -10,6 +10,7 @@ body, html {
   box-sizing: border-box;
 }
 
+
 .container div {
   padding: 15px;
   font-size: 32px;
@@ -45,3 +46,21 @@ body, html {
 .footer {
   background-color: #393f4d;
 }
+
+.container {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 33% 66%;
+  grid-template-rows: 11.6% 11.6% 60% 11.6%;
+}
+
+.header, .footer {
+  grid-column: 1 / -1;
+}
+
+.sidebar {
+  grid-row: 2 / 4;
+}
+
+
+
